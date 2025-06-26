@@ -2,7 +2,7 @@
 # print("Hello world")
 
 # var = value
-name = "Ahmed" #string datatype
+name = "Suleiman" #string datatype
 age = 17 #number datatype
 skills = "HTML and CSS" #stringdatatype
 isTeacher = True #boolean
