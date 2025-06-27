@@ -8,4 +8,3 @@ skills = "HTML and CSS" #stringdatatype
 isTeacher = True #boolean
 
 print(f"My name is {name}, my ge is {age}, and my slills are {skills}")
-
