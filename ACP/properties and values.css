@@ -1,0 +1,48 @@
+/* Color Properties */
+.color {
+    color: #ff0000;
+    /* Hexadecimal color value */
+}
+
+.background-color {
+    background-color: rgba(0, 0, 255, 0.5);
+    /* RGBA color value */
+}
+
+/* Font Properties */
+.font-family {
+    font-family: Arial, sans-serif;
+    /* Font family */
+}
+
+.font-size {
+    font-size: 24px;
+    /* Font size */
+}
+
+.font-weight {
+    font-weight: bold;
+    /* Font weight */
+}
+
+/* Text Properties */
+.text-align {
+    text-align: center;
+    /* Text alignment */
+}
+
+.text-decoration {
+    text-decoration: underline;
+    /* Text decoration */
+}
+
+/* Box Model Properties */
+.width {
+    width: 50%;
+    /* Width */
+}
+
+.height {
+    height: 200px;
+    /* Height */
+}
