@@ -4,7 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Riya's Kitchen and Hotels</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Services Section */
+.services {
+  background-color: #fff0e0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Portfolio Section */
+.portfolio {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.portfolio-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+    </style>
 </head>
 
 <body>
@@ -31,6 +82,36 @@
     <section class="content">
         <h2>About Us</h2>
         <p>We offer authentic cuisine and luxurious accommodation to make your visit memorable.</p>
+        <!-- Services Section -->
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Authentic Cuisine</h3>
+                    <p>We serve fresh, traditional, and international dishes made by experienced chefs.</p>
+                </div>
+                <div class="card">
+                    <h3>Luxury Accommodation</h3>
+                    <p>Stay in our elegant hotel rooms with 24/7 service and ultimate comfort.</p>
+                </div>
+                <div class="card">
+                    <h3>Event Catering</h3>
+                    <p>We offer custom catering for weddings, parties, and corporate events.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Section -->
+        <section class="portfolio">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-gallery">
+                <img src="https://source.unsplash.com/400x300/?restaurant-food" alt="Dish">
+                <img src="https://source.unsplash.com/400x300/?hotel-room" alt="Hotel Room">
+                <img src="https://source.unsplash.com/400x300/?catering-event" alt="Event">
+                <img src="https://source.unsplash.com/400x300/?chef" alt="Chef">
+            </div>
+        </section>
+
     </section>
 </body>
 
