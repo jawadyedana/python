@@ -1,0 +1,20 @@
+/* Text Decoration Line */
+.underline {
+    text-decoration-line: underline;
+}
+
+.overline {
+    text-decoration-line: overline;
+}
+
+.line-through {
+    text-decoration-line: line-through;
+}
+
+/* Text Decoration Style */
+.wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.dotted {
