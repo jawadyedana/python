@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Bank App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .transaction {
+            margin-top: 10px;
+            border-bottom: 1px solid #ccc;
+            padding: 5px 0;
+        }
+
+        .income {
+            color: green;
+        }
+
+        .expense {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bank App</h1>
+    <h2>Balance: $<span id="balance">0.00</span></h2>
+
+    <input type="number" id="amount" placeholder="Enter amount">
+    <button onclick="addIncome()">Add Income</button>
+    <button onclick="addExpense()">Add Expense</button>
+
+    <h3>Transaction History</h3>
+    <div id="history"></div>
+
+    <script>
+        let balance = 0;
+        let history = [];
+
+        function updateBalance() {
+            document.getElementById("balance").innerText = balance.toFixed(2);
+        }
+
+        function addIncome() {
+            const amount = parseFloat(document.getElementById("amount").value);
+            if (amount > 0) {
+                balance += amount;
+                history.push({ type: "Income", amount });
+                updateBalance();
+                showHistory();
+                document.getElementById("amount").value = "";
+            } else {
+                alert("Enter a valid income amount.");
+            }
+        }
+
+        function addExpense() {
+            const amount = parseFloat(document.getElementById("amount").value);
+            if (amount > 0 && amount <= balance) {
+                balance -= amount;
+                history.push({ type: "Expense", amount });
+                updateBalance();
+                showHistory();
+                document.getElementById("amount").value = "";
+            } else {
+                alert("Invalid amount or insufficient balance.");
+            }
+        }
+
+        function showHistory() {
+            const historyDiv = document.getElementById("history");
+            historyDiv.innerHTML = "";
+            history.forEach((item) => {
+                const div = document.createElement("div");
+                div.className = transaction ${ item.type.toLowerCase() };
+                div.textContent = ${ item.type }: $${ item.amount.toFixed(2) };
+                historyDiv.appendChild(div);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
