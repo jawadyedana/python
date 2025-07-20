@@ -1,0 +1,29 @@
+/* Global Styles */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Parent Element */
+.parent {
+    color: blue;
+    font-size: 18px;
+}
+
+/* Child Element */
+.child {
+    font-weight: bold;
+}
+
+/* Overriding Styles */
+.child.override {
+    color: red;
+}
+
+/* Specificity Example */
+#specific {
+    color: green;
+}
+
+.specific {
+    color: blue;
+}
