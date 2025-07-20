@@ -1,0 +1,7 @@
+a:hover::before {
+content: "▶";
+}
+::selection {
+background-color: yellow;
+color:black;
+}
