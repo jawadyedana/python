@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio - Hobbies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore My Hobbies and Interests</p>
+    </header>
+
+    <main>
+        <section class="hobbies">
+            <h2>My Hobbies</h2>
+            <div class="cards">
+
+                <div class="card" onclick="showHobby('coding')">
+                    <img src="https://via.placeholder.com/150?text=Coding" alt="Coding">
+                    <h3>Coding</h3>
+                </div>
+
+                <div class="card" onclick="showHobby('photography')">
+                    <img src="https://via.placeholder.com/150?text=Photography" alt="Photography">
+                    <h3>Photography</h3>
+                </div>
+
+                <div class="card" onclick="showHobby('traveling')">
+                    <img src="https://via.placeholder.com/150?text=Traveling" alt="Traveling">
+                    <h3>Traveling</h3>
+                </div>
+
+                <div class="card" onclick="showHobby('music')">
+                    <img src="https://via.placeholder.com/150?text=Music" alt="Music">
+                    <h3>Music</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="hobbyDetail" class="hobby-detail">
+            <h2>Click on a hobby to learn more</h2>
+            <p id="hobbyDescription"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
