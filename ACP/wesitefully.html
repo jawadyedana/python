@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riya's Kitchen & Hotels</title>
+    <style>
+        /* === Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fffdf9;
+  color: #333;
+}
+
+/* === Navbar === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9a2e2e;
+  padding: 15px 30px;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* === Banner === */
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.banner-text {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* === Section Titles === */
+section h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 28px;
+  color: #812020;
+}
+
+/* === About Section === */
+.about {
+  padding: 0 20px 40px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* === Services Section === */
+.services {
+  background-color: #fff0e0;
+  padding: 40px 20px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #b33030;
+  margin-bottom: 10px;
+}
+
+/* === Portfolio Section === */
+.portfolio {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.portfolio-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* === Social Media Section === */
+.social-media {
+  background-color: #ffe5d0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}
+
+/* === Footer === */
+.footer {
+  background-color: #333;
+  color: #eee;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Riya's Kitchen & Hotels</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <header class="banner">
+        <div class="banner-text">
+            <h1>Welcome to Riya's Kitchen & Hotels</h1>
+            <p>Delicious food | Luxurious stay | Unforgettable experience</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>At Riya’s Kitchen & Hotels, we bring the finest tastes and warmest hospitality under one roof. Whether you're
+            staying overnight or joining us for a meal, we aim to exceed your expectations.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Authentic Cuisine</h3>
+                <p>Enjoy traditional and international dishes prepared by professional chefs.</p>
+            </div>
+            <div class="card">
+                <h3>Luxury Rooms</h3>
+                <p>Comfortable, clean, and stylish rooms with full amenities for your stay.</p>
+            </div>
+            <div class="card">
+                <h3>Catering & Events</h3>
+                <p>We cater for weddings, parties, and corporate events with top-tier service.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-gallery">
+            <img src="data:image/jpeg;base64,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" alt="Restaurant">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fHww" alt="Hotel Room">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npLCxK9qsLelKD6l-PvxYVY7DTOK6l84wAHCPQgR7cFU8g0fEOq4dl0vkcXN6hFlw2Yk2CaH-Vicjas5kpv0TL1YSHfmNiMTjz8xzOWKHNrsRAMy66pEeq_lDyzFXH_qJIBJfqm=w289-h312-n-k-no" alt="Dish">
+            <img src="data:image/jpeg;base64,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" alt="Chef">
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <h2>Follow Us</h2>
+        <div class="icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="YouTube"></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Riya's Kitchen & Hotels. All rights reserved.</p>
+        <p>Contact: info@riyaskitchen.com | ‪+233 537320916‬</p>
+    </footer>
+
+</body>
+
+</html>
