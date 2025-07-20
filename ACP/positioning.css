@@ -1,0 +1,48 @@
+/* Static positioning (default) */
+.static {
+    position: static;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Relative positioning */
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #ffcccc;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Absolute positioning */
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #ccffcc;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Fixed positioning */
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ccccff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+}
+
+/* Sticky positioning */
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #ffffcc;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
