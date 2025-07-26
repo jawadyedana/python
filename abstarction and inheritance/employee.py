@@ -1,39 +1,25 @@
-# import necessary packages
-from abc import ABC, abstractmethod
+# parent class
+class Person(object):
+    # _init_ is known as the constructor
+    def _init_(self, name, idnumber):
+        self.name = name
+        self.idnumber = idnumber
 
-# create a base class
-class Animal(ABC):
-    # abstract method
-    # should be implemented by all sub-classes
-    def move(self):
-        pass
+    def display(self):
+        print(self.name)
+        print(self.idnumber)
 
-# sub classes
-class Human(Animal):
-    def move(self):
-        print("I can walk and run")
+# child class
+class Employee(Person):
+    def _init_(self, name, idnumber, salary, post):
+        self.salary = salary
+        self.post = post
 
-class Snake(Animal):
-    def move(self):
-        print("I can crawl")
+        # invoking the _init_ of the parent class
+        Person._init_(self, name, idnumber)
 
-class Dog(Animal):
-    def move(self):
-        print("I can bark")
+# creation of an object variable or an instance
+a = Employee('Penguin', 20210401, 15000, "Intern")
 
-class Lion(Animal):
-    def move(self):
-        print("I can roar")
-
-# Driver code
-R = Human()
-R.move()
-
-K = Snake()
-K.move()
-
-R = Dog()
-R.move()
-
-K = Lion()
-K.move()
+# calling a function of the class Person using its instance
+a.display()
