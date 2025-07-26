@@ -1,0 +1,22 @@
+# Parent class
+class Animal:
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+
+    def eat(self):
+        print(f"{self.name} is eating.")
+
+# Child class inheriting from Animal
+class Dog(Animal):
+    def __init__(self, name, color, breed):
+        super().__init__(name, color)  # Using super() to call the parent class constructor
+        self.breed = breed
+
+    def bark(self):
+        print(f"{self.name}, the {self.breed}, is barking!")
+
+# Correct instantiation with all required parameters
+dog1 = Dog("buddy", "black", "GermanShepard")
+dog1.eat()  # Parent class method
+dog1.bark()  # Child class method
